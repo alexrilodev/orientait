@@ -2,7 +2,7 @@
 require_once __DIR__ . '/../config.php';
 ?>
 <footer class="mt-5 text-center">
-  <p>© 2025 Plataforma IT Juniors. Todos los derechos reservados.</p>
+  <p>© 2025 Plataforma Orienta IT. Todos los derechos reservados.</p>
 </footer>
 
 <script 
