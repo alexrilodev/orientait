@@ -1,0 +1,121 @@
+/* Variables globales (negro, gris, morado, blanco) */
+:root {
+  --main-bg-color: #000000;       /* Fondo principal */
+  --secondary-bg-color: #1a1a1a;  /* Fondo secundario */
+  --accent-color: #8b00ff;        /* Morado intenso para acentos */
+  --text-color: #ffffff;          /* Texto principal */
+  --text-secondary: #cccccc;      /* Texto secundario */
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Enlaces */
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Ajuste Bootstrap: .bg-light y .navbar-light oscuro */
+.bg-light {
+  background-color: var(--secondary-bg-color) !important;
+  color: var(--text-color) !important;
+}
+.navbar-light {
+  background-color: var(--secondary-bg-color) !important;
+}
+.navbar-light .navbar-brand {
+  color: var(--accent-color) !important;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: var(--text-color) !important;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--accent-color) !important;
+}
+
+/* Footer */
+footer {
+  background-color: var(--secondary-bg-color);
+  color: var(--text-color);
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid var(--accent-color);
+  margin-top: 50px;
+}
+
+.form-control {
+  background-color: var(--secondary-bg-color) !important;
+  color: var(--text-color) !important;
+  border: 1px solid #333;
+}
+.form-control:focus {
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 0 0 0.2rem rgba(139, 0, 255, 0.25);
+}
+
+/* Placeholder en modo oscuro */
+.form-control::placeholder {
+  color: var(--text-secondary);
+  opacity: 1;
+}
+
+/* Para compatibilidad con navegadores antiguos */
+.form-control::-webkit-input-placeholder {
+  color: var(--text-secondary);
+}
+.form-control:-ms-input-placeholder {
+  color: var(--text-secondary);
+}
+.form-control::-ms-input-placeholder {
+  color: var(--text-secondary);
+}
+
+/* Botón morado personalizado */
+.btn-purple {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+}
+.btn-purple:hover {
+  background-color: #9d00ff;
+  color: #ffffff;
+}
+
+/* Cartas */
+.card {
+  background-color: var(--secondary-bg-color) !important;
+  color: var(--text-color) !important;
+  border: 1px solid #333 !important;
+}
+.card .card-header {
+  background-color: var(--accent-color) !important;
+  color: var(--text-color) !important;
+  font-weight: bold;
+}
+
+/* Corrección color text-muted */
+.text-muted {
+  color: #cccccc !important;
+}
+
+.text-purple {
+  color: #6f42c1;
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+/* Color del icono desplegable para acceder al menú de navegación */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%238b00ff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
