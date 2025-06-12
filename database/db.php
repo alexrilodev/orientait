@@ -1,8 +1,8 @@
 <?php
-$host = "localhost";
-$dbname = "it_juniors";
-$username = "root";
-$password = "";
+$host = "sql206.infinityfree.com";
+$dbname = "if0_39217578_orientait";
+$username = "if0_39217578";
+$password = "Nande1424000";
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
