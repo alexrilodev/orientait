@@ -25,37 +25,38 @@ require_once 'config.php';
         </div>
         
         <div class="col-md-6">
-            <section class="bg-light p-4 rounded shadow-sm">
+            <section class="text-center bg-light p-4 rounded shadow-sm">
                 <h3 class="fs-5 fw-bold">¿Por qué Orienta IT?</h3> <br>
 
-                <p class="mt-2 mb-0 justify-text">
+                <p class="mt-2 mb-0 text-center">
                     Mi nombre es <a href="https://alexrilodev.github.io/miportfolio/" target="_blank">Álex Ricart López</a> y soy <strong>Desarrollador Web</strong>.
                 </p>
-                <p class="mt-2 mb-0 justify-text">
+                <p class="mt-2 mb-0 text-center">
                     He trabajado 4 años en Recursos Humanos, 2 años como Orientador Laboral y he ayudado a decenas de perfiles tecnológicos en su camino hacia su primer empleo.
                 </p>
-                <p class="mt-2 mb-0 justify-text">
+                <p class="mt-2 mb-0 text-center">
                     Gracias a esta experiencia, me decidí en crear una plataforma que conectase ambos mundos y mejorase la empleabilidad.
                 </p>
             </section>
 
-            <section class="bg-light p-4 rounded shadow-sm">
+            <section class="text-center bg-light p-4 rounded shadow-sm">
                 <h3 class="fs-5 fw-bold">Valores:</h3> <br>
 
-                <p class="mt-2 mb-0 justify-text">
-                    Orienta IT busca cubrir tus necesidades garantizando: 
+                <p class="mt-2 mb-0 text-center">
+                    Orienta IT busca cubrir tus necesidades garantizando:
+                </p> <br>
+
+                <p class="mt-2 mb-0 text-center">
+                    - Respeto
                 </p>
-                <p class="mt-2 mb-0 justify-text">
-                    · Respeto
+                <p class="mt-2 mb-0 text-center">
+                    - Profesionalidad
                 </p>
-                <p class="mt-2 mb-0 justify-text">
-                    · Profesionalidad
+                <p class="mt-2 mb-0 text-center">
+                    - Compromiso
                 </p>
-                <p class="mt-2 mb-0 justify-text">
-                    · Compromiso
-                </p>
-                <p class="mt-2 mb-0 justify-text">
-                    · Empatía
+                <p class="mt-2 mb-0 text-center">
+                    - Empatía
                 </p>
             </section>
         </div>
