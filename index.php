@@ -15,9 +15,7 @@ require_once 'config.php';
         ?>
         <p class="fs-5 mt-3">
             Orienta IT es una plataforma digital pensada para ayudarte a impulsar tu carrera en el sector tecnológico.
-            Aquí encontrarás oportunidades laborales adaptadas a perfiles junior, así como recursos clave para mejorar tu empleabilidad:
-            ofertas actualizadas, herramientas para optimizar tu CV y LinkedIn, consejos para destacar en entrevistas técnicas
-            y mucho más.
+            Aquí encontrarás oportunidades laborales así como recursos clave para mejorar tu empleabilidad.
         </p>
     </section>
 
@@ -28,15 +26,36 @@ require_once 'config.php';
         
         <div class="col-md-6">
             <section class="bg-light p-4 rounded shadow-sm">
-                <h3 class="fs-5 fw-bold">¿Quién está detrás de Orienta IT?</h3>
+                <h3 class="fs-5 fw-bold">¿Por qué Orienta IT?</h3> <br>
+
                 <p class="mt-2 mb-0 justify-text">
-                    Mi nombre es <strong>Álex Ricart López</strong> y estoy iniciando mi camino profesional como <strong>Desarrollador Web</strong>. <br> 
-                    Dispongo de una trayectoria de más de 6 años en el ámbito de los Recursos Humanos y la orientación laboral. He trabajado con decenas de perfiles tecnológicos en su camino hacia su primer empleo,
-                    lo que me ha permitido entender tanto las barreras que enfrentan los candidatos, como las necesidades reales de las empresas.
+                    Mi nombre es <a href="https://alexrilodev.github.io/miportfolio/" target="_blank">Álex Ricart López</a> y soy <strong>Desarrollador Web</strong>.
                 </p>
                 <p class="mt-2 mb-0 justify-text">
-                    Gracias a esta experiencia, decidí crear una plataforma que conecte ambos mundos y aporte soluciones reales y eficaces.
-                    <a href="https://alexrilodev.github.io/miportfolio/" target="_blank">¿Quiéres saber más sobre mí?</a>
+                    He trabajado 4 años en Recursos Humanos, 2 años como Orientador Laboral y he ayudado a decenas de perfiles tecnológicos en su camino hacia su primer empleo.
+                </p>
+                <p class="mt-2 mb-0 justify-text">
+                    Gracias a esta experiencia, me decidí en crear una plataforma que conectase ambos mundos y mejorase la empleabilidad.
+                </p>
+            </section>
+
+            <section class="bg-light p-4 rounded shadow-sm">
+                <h3 class="fs-5 fw-bold">Valores:</h3> <br>
+
+                <p class="mt-2 mb-0 justify-text">
+                    Orienta IT busca cubrir tus necesidades garantizando: 
+                </p>
+                <p class="mt-2 mb-0 justify-text">
+                    · Respeto
+                </p>
+                <p class="mt-2 mb-0 justify-text">
+                    · Profesionalidad
+                </p>
+                <p class="mt-2 mb-0 justify-text">
+                    · Compromiso
+                </p>
+                <p class="mt-2 mb-0 justify-text">
+                    · Empatía
                 </p>
             </section>
         </div>
