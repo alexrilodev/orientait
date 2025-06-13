@@ -21,8 +21,8 @@ switch ($action) {
     if (isset($_FILES['pdf']) && $_FILES['pdf']['error'] === UPLOAD_ERR_OK) {
         $tmp  = $_FILES['pdf']['tmp_name'];
         $name = uniqid() . '.pdf';
-        move_uploaded_file($tmp, __DIR__ . '/uploads/recursos/' . $name);
-        $file_path = BASE_URL . '/uploads/recursos/' . $name;
+        move_uploaded_file($tmp, UPLOAD_DIR . 'recursos/' . $name);
+        $file_path = BASE_URL . 'uploads/recursos/' . $name;
     }
 
     if ($action === 'create') {
@@ -41,7 +41,8 @@ switch ($action) {
         } else {
             // Si se subió nuevo PDF elimina el anterior
             if ($file_path_actual) {
-                $rutaArchivo = __DIR__ . '/../' . str_replace(BASE_URL, '', $file_path_actual);
+                $oldFileName = basename($file_path_actual);
+                $rutaArchivo = UPLOAD_DIR . 'recursos/' . $oldFileName;
                 if (file_exists($rutaArchivo)) {
                     unlink($rutaArchivo);
                 }
@@ -63,10 +64,11 @@ switch ($action) {
 
     $stmt = $conn->prepare("SELECT file_path FROM recursos WHERE id = ?");
     $stmt->execute([$id]);
-    $file_path = $stmt->fetchColumn();
+    $file_path_from_db = $stmt->fetchColumn();
 
-    if ($file_path) {
-        $rutaArchivo = __DIR__ . '/../' . str_replace(BASE_URL, '', $file_path);
+    if ($file_path_from_db) {
+        $filename = basename($file_path_from_db);
+        $rutaArchivo = UPLOAD_DIR . 'recursos/' . $filename;
         if (file_exists($rutaArchivo)) {
             unlink($rutaArchivo);
         }
