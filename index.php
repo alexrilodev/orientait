@@ -40,12 +40,9 @@ require_once 'config.php';
             </section>
 
             <section class="text-center bg-light p-4 rounded shadow-sm">
-                <h3 class="fs-5 fw-bold">Valores:</h3> <br>
-
                 <p class="mt-2 mb-0 text-center">
                     Orienta IT busca cubrir tus necesidades garantizando:
-                </p> <br>
-
+                </p>
                 <p class="mt-2 mb-0 text-center">
                     - Respeto
                 </p>
