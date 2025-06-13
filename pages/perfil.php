@@ -107,8 +107,8 @@ include '../includes/header.php';
                     >
                 </div>
                 <?php
-                $ruta_fisica = UPLOAD_DIR . 'cv/' . $usuario_id . '.pdf';
-                $ruta_web = BASE_URL . 'uploads/cv/' . $usuario_id . '.pdf';
+                $ruta_fisica = __DIR__ . '/uploads/cv/' . $usuario_id . '.pdf';
+                $ruta_web = BASE_URL . '/uploads/cv/' . $usuario_id . '.pdf';
 
                 if (file_exists($ruta_fisica)): ?>
                     <p>

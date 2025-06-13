@@ -78,7 +78,7 @@ include '../includes/header.php';
                     <br>
                     <?php
                         $cvPath = "/uploads/cv/" . $p['id'] . ".pdf";
-                        $cvServerPath = UPLOAD_DIR . "cv/" . $p['id'] . ".pdf";
+                        $cvServerPath = __DIR__ . "/uploads/cv/" . $p['id'] . ".pdf";
                         if (file_exists($cvServerPath)) {
                             echo "<a href='$cvPath' target='_blank'>📄 Ver CV</a>";
                         } else {
