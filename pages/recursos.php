@@ -31,7 +31,7 @@ $recursos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
   <hr>
   <h2>Asesoría personalizada</h2>
-  <p>Elige día y hora para una sesión de 1 hora:</p>
+  <p>Elige día y hora para una sesión de 1 hora:</p>
   <input id="selectorCita" class="form-control w-25 d-inline-block me-2" readonly>
   <button id="btnReservar" class="btn btn-purple">Reservar cita</button>
   <div id="statusCita" class="mt-3"></div>
