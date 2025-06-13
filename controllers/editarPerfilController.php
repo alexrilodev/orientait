@@ -39,7 +39,7 @@ try {
 
         if ($tipo_mime === 'application/pdf') {
             $nombre_archivo = $usuario_id . ".pdf";
-            $destino = __DIR__ . '/../uploads/cv/' . $nombre_archivo;
+            $destino = __DIR__ . '/uploads/cv/' . $nombre_archivo;
 
             // Eliminar el archivo anterior si existe
             if (file_exists($destino)) {

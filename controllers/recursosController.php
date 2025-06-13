@@ -21,8 +21,8 @@ switch ($action) {
     if (isset($_FILES['pdf']) && $_FILES['pdf']['error'] === UPLOAD_ERR_OK) {
         $tmp  = $_FILES['pdf']['tmp_name'];
         $name = uniqid() . '.pdf';
-        move_uploaded_file($tmp, __DIR__ . '/../uploads/recursos/' . $name);
-        $file_path = BASE_URL . '/../uploads/recursos/' . $name;
+        move_uploaded_file($tmp, __DIR__ . '/uploads/recursos/' . $name);
+        $file_path = BASE_URL . '/uploads/recursos/' . $name;
     }
 
     if ($action === 'create') {

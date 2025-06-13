@@ -28,7 +28,7 @@ try {
         $stmt->execute([$usuario_id]);
 
         // PDF CV si existe
-        $cvPath = __DIR__ . '/../uploads/cv/' . $usuario_id . '.pdf';
+        $cvPath = __DIR__ . '/uploads/cv/' . $usuario_id . '.pdf';
         if (file_exists($cvPath)) {
             unlink($cvPath);
         }
