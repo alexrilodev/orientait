@@ -80,8 +80,7 @@ if (isset($_SESSION['usuario'])) {
         data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       
@@ -90,10 +89,7 @@ if (isset($_SESSION['usuario'])) {
 
           <?php if (!isset($_SESSION['usuario'])): ?>
             <li class="nav-item">
-              <a class="nav-link" href="<?= BASE_URL ?>pages/register.php">Registro</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<?= BASE_URL ?>pages/login.php">Login</a>
+              <a class="nav-link" href="<?= BASE_URL ?>pages/login.php">Iniciar sesión</a>
             </li>
 
           <?php else: ?>
@@ -146,8 +142,7 @@ if (isset($_SESSION['usuario'])) {
                 <i class="bi bi-bell"></i>
                 <?php if ($notificaciones_pendientes > 0): ?>
                   <span 
-                    class="badge bg-danger rounded-pill position-absolute top-0 start-100 translate-middle"
-                  >
+                    class="badge bg-danger rounded-pill position-absolute top-0 start-100 translate-middle">
                     <?= $notificaciones_pendientes ?>
                   </span>
                 <?php endif; ?>
@@ -155,12 +150,7 @@ if (isset($_SESSION['usuario'])) {
             </li>
 
             <li class="nav-item">
-              <a 
-                class="nav-link text-danger" 
-                href="<?= BASE_URL ?>controllers/logoutController.php"
-              >
-                Cerrar sesión
-              </a>
+              <a class="nav-link text-danger" href="<?= BASE_URL ?>controllers/logoutController.php">Cerrar sesión</a>
             </li>
           <?php endif; ?>
 
