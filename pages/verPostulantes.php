@@ -77,9 +77,9 @@ include '../includes/header.php';
                     </small>
                     <br>
                     <?php
-                        $cvPath = UPLOAD_URL . "cv/" . $p['id'] . ".pdf";
                         $cvServerPath = UPLOAD_DIR . "cv/" . $p['id'] . ".pdf";
                         if (file_exists($cvServerPath)) {
+                            $cvPath = UPLOAD_URL . "cv/" . $p['id'] . ".pdf?v=" . filemtime($cvServerPath);
                             echo "<a href='$cvPath' target='_blank'>📄 Ver CV</a>";
                         } else {
                             echo "<em>CV no disponible</em>";

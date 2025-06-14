@@ -72,7 +72,8 @@ switch ($action) {
         // Notificar al admin
         $adminId = $conn->query("SELECT id FROM usuarios WHERE tipo_usuario = 'admin' LIMIT 1")->fetchColumn();
 
-        $cv_url = UPLOAD_URL . "cv/{$_SESSION['id_usuario']}.pdf";
+        $cv_file = UPLOAD_DIR . 'cv/' . $_SESSION['id_usuario'] . '.pdf';
+        $cv_url = UPLOAD_URL . "cv/{$_SESSION['id_usuario']}.pdf?v=" . filemtime($cv_file);
         $stmtNotif = $conn->prepare("INSERT INTO notificaciones (usuario_id, mensaje, tipo) VALUES (?, ?, 'admin')");
         $stmtNotif->execute([
             $adminId,
