@@ -91,6 +91,9 @@ if (isset($_SESSION['usuario'])) {
             <li class="nav-item">
               <a class="nav-link" href="<?= BASE_URL ?>pages/login.php">Iniciar sesión</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<?= BASE_URL ?>pages/register.php">Registrarse</a>
+            </li>
 
           <?php else: ?>
 
